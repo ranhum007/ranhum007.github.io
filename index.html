@@ -3,13 +3,15 @@
 <script>
 
   function openurl() {
-    var response = 
+    var response = document.getElementById("urlbox")
+    var responseval = response.innerHTML
   }
 
 </script>
 
 <body>
 
-  <input id="urlbox"></input>
+  <input id="urlbox"></input> <button id="go" onclick="openurl()">go to url</button>
+  <iframe src="/index.html"></iframe>
 
 </body>
