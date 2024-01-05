@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 
 <script>
+  var documente = document.getElementById("ifr")
+  var url = "aHR0cHM6Ly9oaWxvbC1nYW1lcnN5aXBwZWUua295ZWIuYXBwLw=="
 
-  function openurl() {
-    var response = document.getElementById("urlbox")
-    var responseval = response.innerHTML
-  }
+  var encodedurl = atob(base64String)
 
+  documente.src = encodedurl
 </script>
 
 <body>
 
-  <input id="urlbox"></input> <button id="go" onclick="openurl()">go to url</button>
-  <br>
-  <iframe src="/index.html" width="1280" height="680"></iframe>
+  <iframe id="ifr" src="" width="100%" height="100%"></iframe>
 
 </body>
